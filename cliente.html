@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tesla Industrial Ecuador - Venta de materiales eléctricos, iluminación y herramientas en Ambato">
+    <meta name="keywords" content="electricidad, materiales eléctricos, iluminación, herramientas, Ambato, Ecuador">
+    <title>Tesla Industrial Ecuador | Materiales Eléctricos</title>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="Hola.css">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    <style>
+        /* Fondo y estilo general */
+        body {
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Sección de contacto */
+        section.contact {
+            padding: 50px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            margin: 30px auto;
+            width: 80%;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        section.contact:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            background-color: #1e90ff;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #00bfff;
+        }
+
+        /* Animación en la transición del formulario */
+        .contact-form {
+            transform: perspective(500px) rotateX(0deg);
+            transition: transform 0.4s ease;
+        }
+
+        .contact-form:hover {
+            transform: perspective(500px) rotateX(10deg);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <span>TESLA INDUSTRIAL</span>
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#locales">Nuestros Locales</a></li>
+                <li><a href="#contacto">Comunícate con Nosotros</a></li>
+                <li><a href="sclie.html">Servicio al Cliente</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="contact">
+        <h2>Comunícate con Nosotros</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+                <input type="email" name="correo" placeholder="Tu Correo" required>
+                <textarea name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

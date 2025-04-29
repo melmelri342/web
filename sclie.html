@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tesla Industrial Ecuador - Venta de materiales eléctricos, iluminación y herramientas en Ambato">
+    <meta name="keywords" content="electricidad, materiales eléctricos, iluminación, herramientas, Ambato, Ecuador">
+    <title>Tesla Industrial Ecuador | Servicio al Cliente</title>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="Hola.css">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        section.servicio {
+            padding: 50px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            margin: 30px auto;
+            width: 80%;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, background-color 0.5s ease;
+        }
+
+        section.servicio:hover {
+            transform: scale(1.05);
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .servicio h2 {
+            font-size: 2em;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: color 0.3s ease;
+        }
+
+        .servicio p {
+            font-size: 1.2em;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        .servicio h2:hover, .servicio p:hover {
+            color: #00bfff;
+        }
+
+        .servicio form {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .servicio form:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        .servicio input, .servicio textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.4);
+            color: white;
+            font-size: 1.1em;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .servicio input:focus, .servicio textarea:focus {
+            background: rgba(255, 255, 255, 0.6);
+            transform: scale(1.02);
+            outline: none;
+        }
+
+        .servicio button {
+            padding: 12px 20px;
+            background: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .servicio button:hover {
+            background-color: #00bfff;
+            transform: scale(1.05);
+        }
+
+        /* Filtro para el fondo */
+        .servicio::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            filter: blur(10px) grayscale(50%);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <span>TESLA INDUSTRIAL</span>
+            </a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#locales">Nuestros Locales</a></li>
+                <li><a href="cliente.html">Comunícate con Nosotros</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="servicio">
+        <h2>Servicio al Cliente</h2>
+        <p>Nos preocupamos por ofrecerte la mejor atención. Si tienes alguna pregunta o necesitas asistencia, no dudes en ponerte en contacto con nosotros.</p>
+
+        <form action="#">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" placeholder="Tu nombre completo" required>
+            
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" placeholder="Tu correo electrónico" required>
+            
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="5" placeholder="Tu mensaje o consulta" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>
